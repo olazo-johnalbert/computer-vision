@@ -150,6 +150,8 @@ def draw_rectangle(frame, max_val, top_left, bottom_right):
 
 def main():
     """Main program loop for template matching tracking."""
+    input("Look at the camera. Press enter to start object tracking...")
+    
     # Initialize camera capture
     camera = cv2.VideoCapture(0)
     if not camera.isOpened():
